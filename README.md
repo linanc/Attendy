@@ -16,9 +16,8 @@ Because of Facebook's privacy settings, the GSI (or designated student helper) m
 
 Make sure Python and pip are installed. In your terminal, run the following commands to install the Facebook SDK for Python: 
 
-```$ pip install requests
-     $ pip install -e git+https://github.com/mobolic/facebook-sdk.git#egg=facebook-sdk
-```
+```$ pip install requests```
+```$ pip install -e git+https://github.com/mobolic/facebook-sdk.git#egg=facebook-sdk```
 
 ## Running the Script
 
@@ -26,11 +25,11 @@ Download facenclass.py to a desired location on your system. Copy and paste the 
 
   In the terminal, go to the directory where facenclass.py is located with the 'cd' command. 
 
-```$ cd path/to/file
-```
+```$ cd path/to/file```
+
   Run facenclass.py with the following command in the terminal:
 
-```$ python facenclass.py
-```
+```$ python facenclass.py```
+
 The script should generate 171_Attendy.csv in the same location. 
   Run facenclass.py again later if you want to update the attendance spreadsheet with new lecture photos. 
