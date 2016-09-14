@@ -1,7 +1,7 @@
 import facebook
 import csv
 
-#update token; 2 hr expiry : https://developers.facebook.com/tools/explorer/
+# Replace this token with your own inside the quotes
 token = 'EAACEdEose0cBAErv4gD2zfkjItyIiZCraW0ZBW75KNXXh2kQVdYZAbkoQZAtm2yZCxI4rvsot66abudDzw6pzTIjhcEYwnF7F66YVUrcIBccCcinJavtaCxjYGGsr2jYpxZCLHf77ZBakgh0LEwyJyQPinuoq9ZAdIbqU2PElLZBpaAZDZD'
 # IEOR 171 Facebook Group ID
 group_id = '1061878383932263' 
