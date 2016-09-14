@@ -17,6 +17,7 @@ Because of Facebook's privacy settings, the GSI (or designated student helper) m
 Make sure Python and pip are installed. In your terminal, run the following commands to install the Facebook SDK for Python: 
 
 ```$ pip install requests```
+
 ```$ pip install -e git+https://github.com/mobolic/facebook-sdk.git#egg=facebook-sdk```
 
 ## Running the Script
