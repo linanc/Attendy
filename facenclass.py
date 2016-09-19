@@ -1,5 +1,6 @@
 import facebook
 import csv
+from datetime import datetime
 
 # IEOR 171 Facebook Group ID
 group_id = '1061878383932263' 
