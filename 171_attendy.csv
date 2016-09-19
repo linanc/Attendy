@@ -1,11 +1,11 @@
-IEOR 171,Attendance,,,,,
-,9/3/2016,9/7/2016,9/12/2016,2016-09-12 2,2016-09-12 3,9/13/2016
-Aidee Cantu,1,1,0,0,1,0
-Akshay Madane,1,1,0,0,0,1
-Devyn Krevat,0,0,0,1,0,0
-Gurshaan Madan,1,1,0,0,0,1
-Jeremy Mary,1,1,0,0,0,1
-Jerry Cortez,1,1,0,0,0,1
-Katya Stukalova,0,0,0,0,1,0
-Nancy Li,1,1,0,0,0,0
-Yang Shan,0,0,1,0,0,0
+IEOR 171,Attendance
+,Absences,2016-09-03,2016-09-07,2016-09-12,2016-09-12 2,2016-09-12 4,2016-09-13
+Aidee Cantu,3,1,1,0,0,1,0
+Akshay Madane,3,1,1,0,0,0,1
+Devyn Krevat,5,0,0,1,0,0,0
+Gurshaan Madan,3,1,1,0,0,0,1
+Jeremy Mary,3,1,1,0,0,0,1
+Jerry Cortez,3,1,1,0,0,0,1
+Katya Stukalova,5,0,0,0,0,1,0
+Nancy Li,4,1,1,0,0,0,0
+Yang Shan,5,0,0,0,1,0,0

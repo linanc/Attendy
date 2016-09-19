@@ -1,8 +1,6 @@
 import facebook
 import csv
 
-# Replace this token with your own inside the quotes
-token = 'EAACEdEose0cBAErv4gD2zfkjItyIiZCraW0ZBW75KNXXh2kQVdYZAbkoQZAtm2yZCxI4rvsot66abudDzw6pzTIjhcEYwnF7F66YVUrcIBccCcinJavtaCxjYGGsr2jYpxZCLHf77ZBakgh0LEwyJyQPinuoq9ZAdIbqU2PElLZBpaAZDZD'
 # IEOR 171 Facebook Group ID
 group_id = '1061878383932263' 
 
@@ -50,7 +48,7 @@ def collect_all_students(attendance):
 
 def write_csv(attendance, all_students):
 	first_row = ['IEOR 171', 'Attendance']
-	date_row = [''] + [date for date in sorted(attendance.keys())]
+	date_row = [''] + ['Absences'] + [date for date in sorted(attendance.keys())]
 	f = '171_attendy.csv'
 	with open(f, 'wt', newline='') as f:
 		writer = csv.writer(f)
@@ -59,13 +57,19 @@ def write_csv(attendance, all_students):
 		attendance_dates = sorted(attendance.keys())
 		for student in sorted(all_students):
 			row = [student]
+			tally_row = []
+			absences = 0
 			for date in attendance_dates:
 				if student in attendance[date]:
-					row.append('1')
+					tally_row.append('1')
 				else:
-					row.append('0')
+					absences += 1
+					tally_row.append('0')
+			row.append(str(absences))
+			row += tally_row
 			writer.writerow(row)
 
+token = input("Please paste your user access token: ")
 graph = facebook.GraphAPI(access_token=token, version='2.7')
 group_obj = graph.get_object(id=group_id, fields='events')
 
