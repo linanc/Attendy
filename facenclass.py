@@ -69,6 +69,7 @@ def write_csv(attendance, all_students):
 			row += tally_row
 			writer.writerow(row)
 
+group_id = input("Please paste your group id (number in Facebook group's URL)") 
 token = input("Please paste your user access token: ")
 graph = facebook.GraphAPI(access_token=token, version='2.7')
 group_obj = graph.get_object(id=group_id, fields='events')
