@@ -17,7 +17,7 @@ Face 'n Class is a revolutionary way of taking class attendance for IEOR 171! Fi
 
     ![alt text](https://github.com/linanc/Attendy/blob/master/pictures/closedgroup.png "FB 4")
     
-5. Congratulations! Your IEOR 171 close group has successfully been created. Feel free to upload a cover photo or choose an icon to personalize the IEOR 171 group, or add in a description of course objectives. 
+5. Congratulations! Your IEOR 171 closed group has successfully been created. Feel free to upload a cover photo or choose an icon to personalize the IEOR 171 group, or add in a description of course objectives, or add a few descriptive tags to the group, to raise awareness about this course for future students.
 
     ![alt text](https://github.com/linanc/Attendy/blob/master/pictures/personalizepic.png "FB 6")
 
@@ -34,7 +34,7 @@ Face 'n Class is a revolutionary way of taking class attendance for IEOR 171! Fi
    
    ![alt text](https://github.com/linanc/Attendy/blob/master/pictures/tagurself2.png "FB 9")
 
-10. That's it for the GSI's activity on Facebook! Sit back and let your students take attendance/selfies. The only thing left for the GSI (or designated student) is to run the facenclass.py file in this repo at some later time. The script automatically pulls tags from all photos in all events to create a CSV spreadsheet for attendance, saving lots of manual labbor. The process to install all necessary packages and run the script should take about 15 minutes in total. Below you will find directions on to use the facenclass.py script.  
+10. That's it for the GSI's activity on Facebook! Sit back and let your students take attendance/selfies. The only thing left for the GSI (or designated student) is to run the facenclass.py file in this repo at some later time. The script automatically pulls tags from photos in events to create a CSV spreadsheet for attendance, saving lots of manual labor. The process to install all necessary packages and run the script should take about 15 minutes in total. Below you will find directions on how to use the facenclass.py script.  
 
 
 ## User Authentication
