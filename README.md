@@ -2,9 +2,9 @@
 
 Face 'n Class is a revolutionary way of taking class attendance for IEOR 171! First, all students in the class are invited to the class Facebook group. During a designated time in class, students take selfies of their groups and upload group selfies to Lecture events on the FB Group. All groups must tag each member in the photo. 
 
-  The only thing the GSI (or designated student) has to do is to run the Python script in this repo. It will pull all the tags from all photos to create a CSV spreadsheet for attendance. The process should take about 15 minutes in total. 
+  At a later time, the GSI (or designated student) can run the Python script in this repo. It will automatically pull all the tags from all photos to create a CSV spreadsheet for attendance. The process to run the script should take about 15 minutes in total. 
 
-## Facebook Setup and Usage
+## Part 1: How to Set Up Facebook Group
 
 1. GSI must possess a Facebook account. 
   <br><i>Option A: Use personal Facebook account. Option B: Create a separate Facebook account.</i>
@@ -17,11 +17,12 @@ Face 'n Class is a revolutionary way of taking class attendance for IEOR 171! Fi
 
     ![alt text](https://github.com/linanc/Attendy/blob/master/pictures/closedgroup.png "FB 4")
     
-5. Congratulations! Your IEOR 171 closed group has successfully been created. Feel free to upload a cover photo or choose an icon to personalize the IEOR 171 group, or add in a description of course objectives, or add a few descriptive tags to the group, to raise awareness about this course for future students.
+5. Congratulations! Your IEOR 171 closed group has successfully been created. To fully utilize all of Facebook’s tools, feel free to upload the following: a cover photo, a description depicting the objectives of this course, or a few descriptive tags to the group to raise awareness about this course for future students. 
 
     ![alt text](https://github.com/linanc/Attendy/blob/master/pictures/personalizepic.png "FB 6")
 
-6. To take attendance, the GSI then creates an event for every lecture. For example, for lecture on 9/21/16, the GSI would create an event for that lecture. 
+6. To take attendance, the GSI then creates an event for every lecture. 
+ <br><i>For example, for lecture on 9/21/16, the GSI would create an event for that lecture.</i>
   
   ![alt text](https://github.com/linanc/Attendy/blob/master/pictures/createevent2.png "FB 7")
   
@@ -34,12 +35,14 @@ Face 'n Class is a revolutionary way of taking class attendance for IEOR 171! Fi
    
    ![alt text](https://github.com/linanc/Attendy/blob/master/pictures/tagurself2.png "FB 9")
 
-10. That's it for the GSI's activity on Facebook! Sit back and let your students take attendance/selfies. The only thing left for the GSI (or designated student) is to run the facenclass.py file in this repo at some later time. The script automatically pulls tags from photos in events to create a CSV spreadsheet for attendance, saving lots of manual labor. The process to install all necessary packages and run the script should take about 15 minutes in total. Below you will find directions on how to use the facenclass.py script.  
+10. Congratulations! You have successfully created an environment that fosters collaboration and student engagement while reducing time spent taking class attendance. Read below to install the necessary packages that enable the script to run properly. This is a one-time installation and is estimated to take about 15 minutes.
 
+
+## Part two: Running facenclass.py 
 
 ## User Authentication
 
-Because of Facebook's privacy settings, the GSI (or designated student helper) must first log in to Facebook and generate a user access token. To do so, visit:
+The GSI (or designated student helper) must first log into Facebook and generate a user access token. A user access token communicates to Facebook that this script can access the events and photos on your Facebook group. Creating a user access token is necessary because of Facebook’s privacy settings. To do so, visit:
 <https://developers.facebook.com/tools/explorer/>, login, and generate a 2 hour user access token for user events and user managed groups. 
 
   ![alt text](https://github.com/linanc/Attendy/blob/master/pictures/fb1.png "FB 1")
@@ -63,5 +66,5 @@ Download facenclass.py to a desired location on your system. In the terminal, go
 
 ```$ python facenclass.py```
 
-Paste the access token and Facebook group ID (a number which you can find in the Facebook group's page URL) into the terminal when asked. The script should generate 171_attendy.csv in the same location. 
+Paste the access token and Facebook group ID (a number which you can find in the Facebook group's page URL) into the terminal when asked. The script should generate 171_attendy.csv in the same location. We've included a sample 171_attendy.csv you can look at in this repo. 
   Run facenclass.py again later if you want to update the attendance spreadsheet with new lecture photos. 
