@@ -2,11 +2,8 @@ import facebook
 import csv
 from datetime import datetime
 
-# IEOR 171 Facebook Group ID
-group_id = '1061878383932263' 
-
 def id_date_dict(group_obj):
-	""" Create event id to date dictionary. """
+	""" Create event id to date dictionary, to write into csv. """
 	event_dates = dict()
 	for i in group_obj['events']['data']:
 		event_id = i['id']
@@ -15,7 +12,7 @@ def id_date_dict(group_obj):
 	return event_dates
 
 def date_names_dict(event_dates):
-	""" Create date to names (students present on that date) dictionary """
+	""" See names of students present on that date, from dictionary """
 	attendance = dict()
 	duplicates = 1
 	for event_id in event_dates:
@@ -40,7 +37,7 @@ def date_names_dict(event_dates):
 	return attendance
 
 def collect_all_students(attendance):
-	""" Create a roster with names of all students. """
+	""" Roster with names of all students to write in csv. """
 	all_students = set()
 	for date in attendance:
 		for name in attendance[date]:
@@ -70,7 +67,7 @@ def write_csv(attendance, all_students):
 			row += tally_row
 			writer.writerow(row)
 
-group_id = input("Please paste your group id (number in Facebook group's URL)") 
+group_id = input("Please paste your group id (number in the Facebook group's URL): ") 
 token = input("Please paste your user access token: ")
 graph = facebook.GraphAPI(access_token=token, version='2.7')
 group_obj = graph.get_object(id=group_id, fields='events')
